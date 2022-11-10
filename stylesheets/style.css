@@ -37,6 +37,7 @@
   --shield-grad: linear-gradient(90deg, #eee, #505050);
   /* --moving-grad: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
   --moving-grad: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #f81ce5, #7928ca, #eb367f);
+  --black-btn-grad: linear-gradient(#1f1f1f, #000000 100%, #1f1f1f);
 }
 
 html {
@@ -795,9 +796,10 @@ body::-webkit-scrollbar {
 
 .section4-card>div:last-child>h4 {
   /* border: 1px solid red; */
-  background: var(--metallic-grad);
+  /* background: var(--metallic-grad); */
+  background: linear-gradient(#1f1f1f, #000000 60%, #1f1f1f);
+  padding: 0.4rem 0;
   border-radius: 1rem;
-  color: black !important;
 }
 
 .section4-card::after {
@@ -1013,7 +1015,7 @@ body::-webkit-scrollbar {
 
 .section-6>.blog-card-cont>.blog-card h3 {
   /* background: linear-gradient(#101010, #252525, #101010); */
-  background: linear-gradient(#1f1f1f, #000000 100%, #1f1f1f);
+  background: var(--black-btn-grad);
   padding: 0.4rem 0;
   border-radius: 1rem;
   color: var(--main-bg);
