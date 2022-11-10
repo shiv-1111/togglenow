@@ -43,14 +43,11 @@
     <!-- section 1 -->
     <section class="section-1 flex relative">
       <div class="section1-img-coontainer">
-        <img src="./images/backgrounds/hector-j-rivas-1FxMET2U5dU-unsplash.webp" id="secOneImage" alt="home img">
+        <img src="" id="secOneImage" alt="home img" decoding="async" loading="eager">
       </div>
       <div class="section1-text-container absolute higherZ-index">
-        <h1 id="headOne" class="text-xxxl text-grad ">Enterprise Security at your fingertips</h1>
-        <h2 id="subHead" class="white-text text-md">From Detection to Troubleshooting to Maintenance, <br>we are your
-          partner in
-          managing your
-          enterprise's systems</h2>
+        <h1 id="main-head" class="text-xxxl text-grad "></h1>
+        <h2 id="sub-head" class="white-text text-md"></h2>
       </div>
       <div class="absolute navigator-dots-wrapper flex higherZ-index">
         <span class="navigator-dots"></span>
@@ -59,13 +56,13 @@
         <span class="navigator-dots"></span>
       </div>
 
-      <div id="" class="navigator-left-arrow absolute higherZ-index">
+      <div class="navigator-left-arrow absolute higherZ-index nav-arrow" data-nav="left">
         <span class="material-symbols-outlined white-text-grad text-xxxl">
           arrow_back_ios
         </span>
       </div>
 
-      <div class="navigator-right-arrow absolute higherZ-index"><span
+      <div class="navigator-right-arrow absolute higherZ-index nav-arrow" data-nav="right"><span
           class="material-symbols-outlined white-text-grad text-xxxl">
           arrow_forward_ios
         </span></div>
@@ -836,7 +833,8 @@
       </div>
 
       <div class="copyright-section">
-        <code class="text-sl text-center white-text-grad">© 2022 Ankit Arul & Shivashish Bhaskar. All Rights Reserved</code>
+        <code
+          class="text-sl text-center white-text-grad">© 2022 Ankit Arul & Shivashish Bhaskar. All Rights Reserved</code>
       </div>
     </footer>
   </section>
@@ -844,6 +842,8 @@
   <div class="spider fixed">
 
   </div>
+
+  <script src="./javascripts/script.js"></script>
 </body>
 
 </html>
