@@ -741,6 +741,13 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
+.section4-card>div:last-child>h4 {
+  /* border: 1px solid red; */
+  background: var(--metallic-grad);
+  border-radius: 1rem;
+  color: black !important;
+}
+
 .section4-card::after {
   content: "";
   position: absolute;
@@ -755,7 +762,6 @@ body::-webkit-scrollbar {
 }
 
 .section4-card>div {
-
   padding: 0 1rem;
 }
 
@@ -850,7 +856,8 @@ body::-webkit-scrollbar {
   height: 10rem;
   border-inline-start: 12px solid;
   border-block-start: 12px solid;
-  border-image-source: linear-gradient(270deg, #f81ce5, #7928ca, #eb367f, #d4d4d4 93%);
+  /* border-image-source: linear-gradient(270deg, #f81ce5, #7928ca, #eb367f, #d4d4d4 93%); */
+  border-image-source: var(--metallic-grad);
   border-image-slice: 1;
   z-index: -1;
   /* animation: rotation 2s infinite ease-in-out both; */
@@ -864,7 +871,8 @@ body::-webkit-scrollbar {
   height: 10rem;
   border-inline-end: 12px solid;
   border-block-end: 12px solid;
-  border-image-source: linear-gradient(-270deg, #f81ce5, #7928ca, #eb367f, #d4d4d4 93%);
+  /* border-image-source: linear-gradient(-270deg, #f81ce5, #7928ca, #eb367f, #d4d4d4 93%); */
+  border-image-source: var(--metallic-grad);
   border-image-slice: 1;
   z-index: -1;
   /* animation: rotation 2s infinite ease-in-out both; */
@@ -1218,7 +1226,7 @@ footer>.copyright-section {
 
 
 .square-inner-box {
-  height: 30rem;
+  height: 32rem;
   padding: 2rem;
   /* background: var(--radial-blue); */
   /* border: 0.1rem solid red; */
