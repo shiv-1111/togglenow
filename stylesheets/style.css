@@ -34,7 +34,7 @@
 
   --metallic-grad: linear-gradient(180deg, #fff, #505050);
   --radial-metallic-grad: radial-gradient(#e0e0e0, #606060);
-  --shield-grad: linear-gradient(90deg, #eee, #505050);
+  --shield-grad: linear-gradient(90deg, #ffffff, #2f2f2f 50%);
   /* --moving-grad: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
   --moving-grad: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #f81ce5, #7928ca, #eb367f);
   --black-btn-grad: linear-gradient(#1f1f1f, #000000 100%, #1f1f1f);
@@ -1247,7 +1247,7 @@ footer>.copyright-section {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 50%;
+  width: 60%;
   height: 100%;
 }
 
@@ -1256,7 +1256,7 @@ footer>.copyright-section {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  width: 50%;
+  width: 60%;
 }
 
 .text-rt-tp {
@@ -1265,7 +1265,7 @@ footer>.copyright-section {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  width: 50%;
+  width: 60%;
   float: right;
 }
 
@@ -1275,7 +1275,7 @@ footer>.copyright-section {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 50%;
+  width: 60%;
   float: right;
 }
 
@@ -1292,8 +1292,8 @@ footer>.copyright-section {
 
 
 .square-inner-box {
-  height: 32rem;
-  padding: 2rem;
+  height: 100%;
+  padding: 1rem 2rem;
   /* background: var(--radial-blue); */
   /* border: 0.1rem solid red; */
   border-block: 0.2rem solid;
@@ -1311,7 +1311,7 @@ footer>.copyright-section {
   top: 5%;
   left: 5%;
   background: var(--text-n-border-gradient);
-  filter: blur(7rem);
+  filter: blur(7rem) brightness(60%);
   z-index: -1;
 }
 
