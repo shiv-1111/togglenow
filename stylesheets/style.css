@@ -26,6 +26,7 @@
   --radial-blue: radial-gradient(#0141FF55, #0000000f);
 
   --text-n-border-gradient: linear-gradient(90deg, #f81ce5, #7928ca, #eb367f, #d4d4d4 93%);
+  /* --text-n-border-gradient: linear-gradient(90deg, #7CFC00, #eb367f); */
 
   --golden-box-shadow: rgb(255 255 255 / 15%) 0px 0px 0px 0.1rem;
 
@@ -281,8 +282,57 @@ body::-webkit-scrollbar {
   display: block;
   height: 1.5rem;
   width: 1.5rem;
-  background: var(--radial-metallic-grad);
+  background: #ffffff80;
   border-radius: 50%;
+}
+
+.selected-dot-background {
+  background: #ffffff;
+  transition: all 0.6s ease-in-out;
+  transform: scale(1.2);
+  animation: opacityChg 0.6s ease forwards;
+}
+
+.translate-right-to-left {
+  animation: translateRtoL 0.6s ease 1;
+}
+
+@keyframes translateRtoL {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.translate-left-to-right {
+  animation: translateLtoR 0.6s ease 1;
+}
+
+@keyframes translateLtoR {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes opacityChg {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* section 1 ends here  */
@@ -420,6 +470,8 @@ body::-webkit-scrollbar {
 .small-box-pd {
   padding: 1rem;
 }
+
+
 
 /* section 2 ends here */
 
