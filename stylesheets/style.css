@@ -230,7 +230,7 @@ body::-webkit-scrollbar {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 3;
 }
 
@@ -376,15 +376,30 @@ body::-webkit-scrollbar {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  background: var(--radial-metallic-grad);
+  /* background: var(--radial-metallic-grad); */
   overflow: hidden;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  /* background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background: url("../images/icons/SkillGap1.png"); */
+  /* background: red; */
+  /* border: 1px solid whitesmoke; */
+  /* border-block: 0.1rem solid;
+  border-inline: 0.1rem solid;
+  border-image-source: var(--metallic-grad);
+  border-image-slice: 1; */
 }
 
 .sub-section-card__img img {
   object-fit: cover;
   height: 100%;
   width: 100%;
-  border-radius: 50%;
+  /* border: 1px solid red; */
+  /* background: var(--metallic-grad); */
+  /* filter: drop-shadow(.5rem .5rem 1rem #e23); */
 }
 
 .sub-section-card__text-wrapper {
@@ -548,6 +563,7 @@ body::-webkit-scrollbar {
 
 .section-3-security-cont {
   width: 100%;
+  height: 70vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -682,27 +698,59 @@ body::-webkit-scrollbar {
 
 .section-3>div:nth-of-type(2) {
   display: grid;
+  width: 100%;
+  height: 90vh;
   place-items: center;
   user-select: none;
-  /* background: var(--radial-blue); */
-  /* background: var(--radial-blue-gradient-reverse); */
 }
 
-.section-3>div:nth-of-type(2)>div {
-  width: 40%;
+.fourEdge-content-box {
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  width: 55%;
+  height: 70%;
   flex-direction: column;
   border-radius: 1rem;
   padding: 5rem;
+  /* transform: translateX(10rem); */
+  /* background: url("../images/icons/LT1.png"); */
 
+}
+
+.left-img-cont {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: -5rem;
+  bottom: 0;
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icons/LT1.png");
+}
+
+.right-img-cont {
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  right: -10%;
+  background-position: top;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-image: url("../images/icons/RT2.png");
+  /* opacity: 0.7; */
+  /* transform: scale(); */
 }
 
 .section-3>div:nth-of-type(2)>div>h2 {
   width: 100%;
   text-align: center;
-  background: var(--text-n-border-gradient);
-  -webkit-text-fill-color: transparent;
+  /* background: var(--text-n-border-gradient); */
+  /* -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
+  background-clip: text; */
 }
 
 .section-3>.card-cont {
@@ -1099,6 +1147,10 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
+.answer {
+  display: none;
+}
+
 .section-7>div>.questions-cont>.questions>div {
   padding: 5px;
   transition: linear 0.3s;
@@ -1378,7 +1430,7 @@ footer>.copyright-section {
   float: right;
   text-align: center;
   padding: 2rem;
-  transform: translateX(0.2rem) translateY(0.2rem);
+  /* transform: translateX(0.1rem) translateY(0.1rem); */
   border-image-source: var(--metallic-grad);
   border-block-start: 0.2rem solid;
   border-inline-start: 0.2rem solid;
@@ -1396,7 +1448,7 @@ footer>.copyright-section {
   float: right;
   text-align: center;
   padding: 2rem;
-  transform: translateX(-0.2rem) translateY(0.2rem);
+  /* transform: translateX(-0.1rem) translateY(0.1rem); */
   border-block-start: 0.2rem solid;
   border-inline-end: 0.2rem solid;
   border-image-source: var(--metallic-grad);
@@ -1413,8 +1465,8 @@ footer>.copyright-section {
   text-align: center;
   /* border-left: 0.1rem solid white;
   border-bottom: 0.1rem solid white; */
-  border-image-source: var(--metallic-grad);
-  transform: translateX(0.2rem) translateY(-0.2rem);
+  border-image-source: linear-gradient(180deg, #505050, #fff);
+  /* transform: translateX(0.1rem) translateY(-0.1rem); */
   border-block-end: 0.2rem solid;
   border-inline-start: 0.2rem solid;
   border-image-slice: 1;
@@ -1430,8 +1482,8 @@ footer>.copyright-section {
   padding: 2rem;
   width: 15rem;
   text-align: center;
-  transform: translateX(-0.2rem) translateY(-0.2rem);
-  border-image-source: var(--metallic-grad);
+  /* transform: translateX(-0.1rem) translateY(-0.1rem); */
+  border-image-source: linear-gradient(180deg, #505050, #fff);
   border-block-end: 0.2rem solid;
   border-inline-end: 0.2rem solid;
   border-image-slice: 1;
